@@ -3,7 +3,7 @@
  <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="the personal website of evan chipman" />
+  <meta name="description" content="Evan Chipman builds wallet, payment and trading infrastructure. Selected work in Amplifi, Foundry and Tempo MPP, plus 35mm photography." />
 
   <title>Evan Chipman</title>
 
@@ -12,11 +12,11 @@
 
  <body>
   <div id="preamble">
-   <a href="https://github.com/evchip"><h1 class="title">Evan Chipman</h1></a>
+   <h1 class="title">Evan Chipman</h1>
 
    <h2 class="subtitle" style="margin-bottom: 35px;">
     contact me via
-    [me at evanchipman dot com] or view my
+    <a href="mailto:evchip@pm.me">email</a> or view my
     <a href="https://github.com/evchip">github</a>
     &amp; <a href="https://twitter.com/evanchipman">twitter</a>
    </h2>
@@ -26,24 +26,26 @@
     <p style="margin-bottom: 40px; text-align: center;">I'm a founding engineer at <a href="https://t1protocol.com">𝚝𝟷</a>.</p>
     <div>
       <h2>About Me</h2>
-      <p>I'm a software engineer. These days I'm building trading, payment and settlement infrastructure for these fancy stochastic lambdas that are in vogue.</p>
+      <p>I build wallet, payment and trading infrastructure. I care about making complex systems easier for people to use, and giving them more control over their money.</p>
       
-      <p>I've lived in <a href="https://nomads.com/@chippers">many different countries</a>. I've recently returned to live in my hometown, San Francisco.</p>
+      <p>I've lived in <a href="https://nomads.com/@chippers">many different countries</a>. I'm from the Bay Area and now live in Scottsdale, Arizona.</p>
     </div>
    <div>
-    <h2>Open Source Work</h2>
+    <h2>Selected Work</h2>
     <div>
      <ul>
-      <li><a href="https://docs.t1protocol.com/integration/xChainRead/overview"><code>xChainRead</code></a>: a cross-chain verification primitive that enables smart contracts to securely call view functions on other chains and prove the results back to an origin chain.</li>
-      <li><a href="https://github.com/struct-defi/struct-contracts?tab=readme-ov-file#struct-protocol-----"><code>Struct Finance</code></a>: a structured financial product to tranche LP positions on AMM pools.</li>
-      <li><a href="https://getfoundry.sh/reference/cheatcodes/sign-delegation"><code>vm.signDelegation</code></a>: A forge cheatcode to sign an EIP-7702 authorization for delegation.</li>
+      <li><code>Amplifi</code>: I built core systems for a leveraged trading platform on Polymarket that has processed $5M+ in trading volume. My work spans per-user smart-contract wallets, transaction signing, gas sponsorship, lending, deposits and withdrawals. I owned partner integrations end to end, handling asset conversion and settlement on our side so partners could keep their existing funding flows.</li>
+      <li><a href="https://github.com/foundry-rs/foundry/pull/9236"><code>Foundry</code></a>: I contributed EIP-7702 account-delegation tooling in Rust, enabling developers to sign, test and broadcast delegated-account transactions. Merged upstream.</li>
+      <li><code>Tempo MPP</code>: I ported <a href="https://github.com/tempoxyz/mpp-rs/pull/229">configurable fee-sponsorship limits</a> to the Rust SDK and fixed an <a href="https://github.com/tempoxyz/mpp-rs/pull/194">async payment-channel polling bug</a>. Both merged upstream.</li>
+      <li><a href="https://github.com/struct-defi/struct-contracts?tab=readme-ov-file#struct-protocol-----"><code>Struct Finance</code></a>: I built structured-investment contracts offering different risk and return profiles; the products processed $30M+ in volume. I also built a derivatives exchange end to end, including the matching engine, order book and trading interface.</li>
      </ul>
     </div>
-    <h2>Closed Source Work</h2>
+    <h2>Earlier Work</h2>
     <div>
      <ul>
-      <li><a href="https://x.com/t1protocol/status/1993654584883962057"><code>Yild</code></a>: A cross-chain yield optimizer for the Ethereum ecosystem, leveraging TEEs for verifiable offchain computation.</li>
-      <li><a href="https://furnis.io"><code>Furnis</code></a>: A CI/CD platform for smart contract development to execute forge scripts in a secure environment, track on-chain interactions, and seamlessly access artifacts.</li>
+      <li><a href="https://docs.t1protocol.com/integration/xChainRead/overview"><code>xChainRead</code></a>: cross-chain verification for smart-contract reads.</li>
+      <li><a href="https://x.com/t1protocol/status/1993654584883962057"><code>Yild</code></a>: a cross-chain yield optimizer using TEEs for verifiable offchain computation.</li>
+      <li><a href="https://furnis.io"><code>Furnis</code></a>: I built a smart-contract CI/CD platform with isolated script execution, live logs and signing through AWS KMS.</li>
      </ul>
     </div>
    </div>
