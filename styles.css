@@ -248,3 +248,24 @@ code,
   .portfolio .project { break-inside: avoid; background: white; color: black; border: 1px solid #aaa; }
   .portfolio .photography-section { break-before: page; }
 }
+
+/* Notes reuse the page's ruled, editorial layout. */
+.portfolio .notes-section { padding-bottom: 88px; }
+.portfolio .note-link { display: grid; grid-template-columns: 1fr auto auto; align-items: baseline; gap: 24px; padding: 10px 0 26px; border-bottom: 1px solid var(--rule); text-decoration: none; }
+.portfolio .note-title { font-size: 24px; line-height: 1.35; letter-spacing: -.025em; }
+.portfolio .note-kind { color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; }
+@media (max-width: 700px) {
+  .portfolio .notes-section { padding-bottom: 56px; }
+  .portfolio .note-link { grid-template-columns: 1fr auto; gap: 12px; }
+  .portfolio .note-title { font-size: 21px; }
+  .portfolio .note-kind { grid-column: 1; grid-row: 2; }
+  .portfolio .site-header nav { gap: 16px; }
+}
+@media (max-width: 360px) {
+  .portfolio .site-header { gap: 16px; }
+  .portfolio .site-header nav { gap: 12px; }
+}
+
+/* The biography needs no decorative second heading. */
+.portfolio .about-layout { grid-template-columns: 1fr; }
+.portfolio .about-copy { max-width: 62ch; }
